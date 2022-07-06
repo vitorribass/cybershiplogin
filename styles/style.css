@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+*{
+    max-height: 80vh;
+}
+
+body{
+    margin: 0;
+    color:white;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 24px;
+    background: #0a0007;
+    background-image: url(/components/images/PurpleGradientBG.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background: #BE44D4; */
+}
+
+li{
+    display: inline-block;
+    margin-inline: 20px;
+    color: #ffffff;
+}
+
+a{
+    border: 2px solid #BE44D4;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+a:hover{
+    background: #BE44D4;
+    transition: 0.3s all;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+    font-size: 12px;
+}
+
+.main-login{
+    margin-top: 30px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    color: white;
+}
+
+.right-login{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    line-height: 6px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-login > h1 {
+    font-size: 2.5vw;
+    color: #ffffff;
+}
+
+span{
+    color: #BE44D4;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: transparent;
+    backdrop-filter: blur(80px);
+    border: 2px solid #BE44D4;
+    border-radius: 30px;
+    box-shadow: 0px 15px 30px #0702029a;
+}
+
+.card-login > h1 {
+    font-weight: 800;
+    margin: 0;
+    color: #ffffff
+}
+
+.textfield{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    /* background: #2034b6; */
+    color: #070707;
+    outline: none;
+    font-size: 12pt;
+    box-shadow: 0px 15px 25px #0702029a;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    margin: 5px 0px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.textfield > input::placeholder{
+    color: #7d1a9148;
+}
+
+.login-btn{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: 2px solid #BE44D4;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    outline: none;
+    letter-spacing: 2px;
+    color: #ffffff;
+    background: #BE44D4;
+    box-shadow: 0px 15px 25px -12px #0702029a;
+}
+
+.right-login-img{
+    width: 35vw;
+    align-self: center;
+}
+
+.login-btn:hover
+{
+    cursor: pointer;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+    li{
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    li{
+        font-size: 3vw;
+    }
+    .right-login > h1{
+        display: none;
+    }
+    .righ-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login{
+        width: 90%;
+        height: auto;
+    }
+    .right-login-img{
+        width: 50vw;
+    }
+    .card-login{
+        width: 90%;
+        margin-top: 10vw;
+    }
+}
